@@ -8,13 +8,13 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <NavBar />
       <Switch>
-        <Route exact path="https://sahil0705.github.io/Frontend-CRUD/" component={Home} />
-        <Route exact path="https://sahil0705.github.io/Frontend-CRUD/all" component={AllUsers} />
-        <Route exact path="https://sahil0705.github.io/Frontend-CRUD/add" component={AddUser} />
-        <Route exact path="https://sahil0705.github.io/Frontend-CRUD/edit/:id" component={EditUser} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/all" component={AllUsers} />
+        <Route exact path="/add" component={AddUser} />
+        <Route exact path="/edit/:id" component={EditUser} />
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
