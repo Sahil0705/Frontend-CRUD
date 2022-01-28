@@ -11,10 +11,10 @@ function App() {
     <BrowserRouter>
       <NavBar />
       <Switch>
-        <Route exact path="https://sahil0705.github.io/Frontend_CRUD/" component={Home} />
-        <Route exact path="https://sahil0705.github.io/Frontend_CRUD/all" component={AllUsers} />
-        <Route exact path="https://sahil0705.github.io/Frontend_CRUD/add" component={AddUser} />
-        <Route exact path="https://sahil0705.github.io/Frontend_CRUD/edit/:id" component={EditUser} />
+        <Route exact path="https://sahil0705.github.io/Frontend-CRUD/" component={Home} />
+        <Route exact path="https://sahil0705.github.io/Frontend-CRUD/all" component={AllUsers} />
+        <Route exact path="https://sahil0705.github.io/Frontend-CRUD/add" component={AddUser} />
+        <Route exact path="https://sahil0705.github.io/Frontend-CRUD/edit/:id" component={EditUser} />
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
